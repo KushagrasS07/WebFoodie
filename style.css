@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    background-color: rgb(44,41,38);
+}
+a{
+    text-decoration: none;
+}
+#main-header{
+    display:flex;
+    height:5rem;
+    justify-content:space-between;
+    background-color: rgb(29, 26, 24);
+    align-items:center;
+    padding:0 5%;
+}
+#pg-lg{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: rgb(238, 164, 80);
+}
+#main-header ul{ 
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+#main-header li{
+    margin:0 1.25rem;    
+}
+#main-header nav a{
+    font-size:1.25rem;
+    font-weight:lighter;
+    color:rgb(186, 131, 31);
+}
+nav a:hover{
+    color:rgb(238, 164, 80);
+}
+
+main h1{
+    font-size: 3rem;
+    text-align: center;
+    color:rgb(238, 164, 80);
+}
+#latest-products{
+    width:80%;
+    margin:2rem auto;
+}
+main li{
+    list-style: none;
+}
+#latest-products ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    margin:0;
+    padding:0;
+}
+.food-items{
+    background-color:rgb(228,206,182) ;
+    border-radius:5px;;
+    overflow:hidden;
+}
+.food-items img{
+    height:15rem;
+    width:100%;
+    object-fit:cover;   
+}
+.food-item-content{
+    text-align: center;
+    padding:1rem;
+}
+.btn{
+    background-color: rgb(235, 168, 61);
+    color:white;
+    padding:0.5rem 1.5rem;
+    border-radius:5px;
+}
+.btn:hover{
+    background-color:rgb(235, 152, 18) ;
+}
