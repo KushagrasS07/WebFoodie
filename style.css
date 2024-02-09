@@ -79,7 +79,13 @@ main li{
 .btn:hover{
     background-color:rgb(235, 152, 18) ;
 }
-@media(max-width: 768px){
+@media(max-width: 48rem){
+    #main-header nav{
+        display:none;
+    }
+    main h1{
+        font-size:1.5rem;
+    }
     #latest-products ul{
         grid-template-columns: 100%;/* or 1 fr* here 100% means the content will use the whole avialable space*/
     }
