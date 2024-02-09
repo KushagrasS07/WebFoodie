@@ -79,3 +79,8 @@ main li{
 .btn:hover{
     background-color:rgb(235, 152, 18) ;
 }
+@media(max-width: 768px){
+    #latest-products ul{
+        grid-template-columns: 100%;/* or 1 fr* here 100% means the content will use the whole avialable space*/
+    }
+}
