@@ -25,6 +25,7 @@ a{
     display:flex;
     flex-direction: column;
     justify-content:space-around;
+    display:none;
 }
 .menu-btn span{
     width:100%;
@@ -51,10 +52,39 @@ nav a:hover{
 #side-drawer{
     width: 100%;
     height: 100%;
-    
     background-color:rgb(29,26,27);
+    position:fixed;
+    top:0;
+    left:0;
+    list-style:none ;
+    display:none;
 }
-
+#side-drawer header{
+    height:5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#side-drawer ul{
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:3.5rem 1rem;
+}
+#side-drawer a{
+    color: rgb(238, 164, 80);
+    font-size: 2rem;
+}
+#side-drawer a:hover{
+    color:rgb(228,206,182);
+}
+#side-drawer li{
+    margin:1rem 0;
+}
+#side-drawer:target{
+    display:block;
+}
 main h1{
     font-size: 3rem;
     text-align: center;
@@ -103,6 +133,9 @@ main li{
     }
     main h1{
         font-size:1.5rem;
+    }
+    .menu-btn{
+        display:flex;
     }
     #latest-products ul{
         grid-template-columns: 100%;/* or 1 fr* here 100% means the content will use the whole avialable space*/
